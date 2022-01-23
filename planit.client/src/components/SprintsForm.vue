@@ -7,10 +7,16 @@
         placeholder="Sprint Name..."
         name="sprint"
         id="sprint"
-        class="form-control"
+        class="form-control mb-4"
         v-model="sprint.name"
       />
-      <button type="submit" title="Submit">Submit</button>
+      <button
+        class="btn rounded gradient ms-2 px-5 text-light"
+        type="submit"
+        title="Submit"
+      >
+        Submit
+      </button>
     </form>
   </div>
 </template>

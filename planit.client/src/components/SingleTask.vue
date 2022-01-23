@@ -55,7 +55,6 @@
           Move This Task
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <!-- NOTE itterates over all the sprints from computed. at click of an individual list item, send the task object and the  NEW sprint id. -->
           <li
             v-for="sprint in sprints"
             :key="sprint.id"

@@ -31,22 +31,15 @@
             </div>
             <div class="col-2" v-if="account.id === p.creatorId" title="Delete">
               <i
-                class="mdi mdi-trash-can-outline mdi-24px selectable"
+                class="
+                  mdi mdi-trash-can-outline mdi-24px
+                  selectable
+                  text-danger
+                "
                 @click="removeProject(p.id)"
               ></i>
             </div>
           </div>
-        </div>
-        <div class="text-end">
-          <!-- <button
-            class="btn rounded mx-3 my-2 gradient"
-            data-bs-toggle="modal"
-            data-bs-target="#ProjectForm"
-            title="Create Project"
-            @click="closeCanvas()"
-          >
-            Create
-          </button> -->
         </div>
       </div>
     </form>

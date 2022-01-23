@@ -6,7 +6,7 @@
       placeholder="Task Name..."
       name="task"
       id="task"
-      class="form-control"
+      class="form-control mb-4"
       v-model="task.name"
     />
     <label>Task Weight</label>
@@ -15,11 +15,17 @@
       placeholder="Task Weight..."
       name="weight"
       id="weight"
-      class="form-control"
+      class="form-control mb-4"
       v-model="task.weight"
     />
 
-    <button type="submit" title="Submit">Submit</button>
+    <button
+      class="btn rounded gradient ms-2 px-5 text-light"
+      type="submit"
+      title="Submit"
+    >
+      Submit
+    </button>
   </form>
 </template>
 

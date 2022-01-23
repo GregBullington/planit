@@ -15,11 +15,7 @@
             data-bs-dismiss="offcanvas"
             aria-label="Close"
           ></button>
-          <h4 class="offcanvas-title" id="offcanvasWithBackdropLabel">
-            <!-- S{{ index + 1 }}
-            {{ sprint.name }} -->
-            Notes
-          </h4>
+          <h4 class="offcanvas-title" id="offcanvasWithBackdropLabel">Notes</h4>
         </div>
         <div class="offcanvas-body container-fluid scrollbar-ripe-malinka">
           <div class="row align-items-center">
@@ -32,7 +28,6 @@
                   id="note"
                   placeholder="Say something..."
                 /><button type="submit" title="Submit" class="gradient rounded">
-                  <!-- @click="closeCanvas()" -->
                   <i class="mdi mdi-send text-light"></i>
                 </button>
               </form>

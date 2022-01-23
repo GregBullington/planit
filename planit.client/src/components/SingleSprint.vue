@@ -31,11 +31,7 @@
         </button>
       </div>
       <div class="col-4 text-end px-5">
-        <h4>
-          <!-- NOTE need tasks in AppState and computed -->
-          <!-- {{tasks.isCompleted.length}} / {{tasks.length}} -->
-          {{ completedTasks }}/{{ tasks.length }} Tasks Complete
-        </h4>
+        <h4>{{ completedTasks }}/{{ tasks.length }} Tasks Complete</h4>
       </div>
       <div
         :id="'s' + sprint.id"

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col text-end">
           <i
-            class="mdi mdi-trash-can-outline mdi-24px selectable"
+            class="mdi mdi-trash-can-outline mdi-24px selectable text-danger"
             v-if="account.id === note.creatorId"
             title="Delete"
             @click="removeNote(note)"

@@ -21,15 +21,18 @@
           <div class="row align-items-center">
             <div class="col">
               <form class="" @submit.prevent="createNote()">
-                <input
-                  v-model="note.body"
-                  class="form-control"
-                  type="text"
-                  id="note"
-                  placeholder="Say something..."
-                /><button type="submit" title="Submit" class="gradient rounded">
-                  <i class="mdi mdi-send text-light"></i>
-                </button>
+                <div class="input-group">
+                  <input
+                    v-model="note.body"
+                    class="form-control"
+                    type="text"
+                    id="note"
+                    placeholder="Say something..."
+                  />
+                  <button type="submit" title="Submit" class="gradient rounded">
+                    <i class="mdi mdi-send text-light"></i>
+                  </button>
+                </div>
               </form>
             </div>
           </div>

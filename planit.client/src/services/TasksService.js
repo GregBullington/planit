@@ -15,7 +15,7 @@ class TasksService {
   }
   async removeTask(task) {
     await api.delete(`api/projects/${task.projectId}/tasks/${task.id}`)
-    AppState.tasks = AppState.tasks.filter(t => t.id !== AppState.tasks.id)
+    AppState.tasks = AppState.tasks.filter(t => t.id !== task.id)
     this.getTasksByProjectId(task.projectId)
   }
   async toggleCheckbox(pId, task) {
@@ -23,14 +23,14 @@ class TasksService {
     const res = await api.put(`api/projects/${pId}/tasks/${task.id}`, task)
 
   }
-  async moveSprint(task, sprintId){
+  async moveSprint(task, sprintId) {
     // NOTE edit task. re assign it to the new sprint id.
-    task.sprintId = sprintId 
+    task.sprintId = sprintId
     // NOTE send the edited task object to the api. 
     await api.put(`api/projects/${task.projectId}/tasks/${task.id}`, task)
     // NOTE re get the tasks to update the page 
     await this.getTasksByProjectId(task.projectId)
-    
+
 
   }
 

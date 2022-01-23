@@ -68,6 +68,7 @@ export default {
       async removeProject(id) {
         try {
           if (await Pop.confirm("Are you sure you want to Delete your project?", 'confirm')) {
+            this.closeCanvas()
             await projectsService.removeProject(id)
             router.push({ name: 'Home' })
           }

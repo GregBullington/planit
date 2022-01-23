@@ -53,7 +53,7 @@
             >
             <img
               title="Edit Profile"
-              :src="user.picture"
+              :src="account.picture"
               alt="user photo"
               height="40"
               class="ms-3 img-container selectable"

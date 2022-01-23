@@ -18,7 +18,7 @@
       <div class="col-md-2 text-end">
         <button
           style="font-size: 14px"
-          class="btn rounded btn-outline-custom gradient-text px-4"
+          class="btn rounded gradient text-light px-4"
           data-bs-toggle="modal"
           data-bs-target="#TaskForm"
           title="Add Task"

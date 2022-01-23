@@ -21,7 +21,7 @@
         </div>
         <div class="col-md-6 text-end mb-5">
           <button
-            class="btn btn-lg rounded btn-outline-custom gradient-text px-5"
+            class="btn btn-lg rounded gradient px-5 text-light"
             data-bs-toggle="modal"
             data-bs-target="#ProjectForm"
             title="create-project"

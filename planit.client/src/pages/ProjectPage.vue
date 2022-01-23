@@ -29,14 +29,7 @@
         <div class="col-md-4 text-end">
           <button
             style="font-size: 18px"
-            class="
-              btn btn-lg
-              rounded
-              btn-outline-custom
-              gradient-text
-              px-5
-              mb-3
-            "
+            class="btn btn-lg rounded gradient px-5 text-light mb-3"
             data-bs-toggle="modal"
             data-bs-target="#SprintsForm"
             title="create-sprint"

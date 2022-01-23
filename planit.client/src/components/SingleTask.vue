@@ -12,14 +12,14 @@
       />
       <h5 class="m-0">{{ task.name }}</h5>
       <i
-        class="mdi mdi-trash-can-outline mdi-24px selectable ms-4"
+        class="mdi mdi-trash-can-outline mdi-24px selectable ms-4 text-danger"
         v-if="account.id === task.creatorId"
         @click="removeTask(task)"
         title="Delete"
       ></i>
     </div>
     <div class="row justify-content-between">
-      <div class="col-4 d-flex">
+      <div class="col-md-4 d-flex">
         <div class="m-2">
           <p>
             <i
@@ -35,11 +35,13 @@
             ></i>
           </p>
         </div>
-        <div class="m-2">
+        <div class="m-2 d-flex">
           <p>
             {{ task.weight }}
-            <i class="mdi mdi-weight mdi-24px gradient-text2"></i>
           </p>
+          <span>
+            <i class="mdi mdi-weight mdi-24px gradient-text2"></i>
+          </span>
         </div>
       </div>
 

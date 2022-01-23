@@ -1,5 +1,5 @@
 <template>
-  <div class="row ps-0">
+  <div class="row">
     <div class="col-2 mt-3 ms-0 p-0" id="edit-div">
       <button
         class="btn gradient text-light px-5"
@@ -29,7 +29,14 @@
         <div class="col-md-4 text-end">
           <button
             style="font-size: 18px"
-            class="btn btn-lg rounded btn-outline-custom gradient-text px-5"
+            class="
+              btn btn-lg
+              rounded
+              btn-outline-custom
+              gradient-text
+              px-5
+              mb-3
+            "
             data-bs-toggle="modal"
             data-bs-target="#SprintsForm"
             title="create-sprint"
@@ -44,7 +51,6 @@
         :key="sprint.id"
         :index="index"
       >
-        <!-- NOTE inject single sprint here -->
         <SingleSprint :sprint="sprint" :index="index" />
       </div>
       <ProjectsComponent />

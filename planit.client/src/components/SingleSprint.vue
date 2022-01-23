@@ -1,5 +1,5 @@
 <template>
-  <div class="col card-sprints rounded p-2">
+  <div class="col card-sprints rounded p-2 m-2">
     <div class="row align-items-center">
       <div class="col-6 d-flex align-items-center">
         <i class="mdi mdi-rhombus-outline mdi-48px me-3 gradient-text2"></i>
@@ -12,9 +12,6 @@
           S{{ index + 1 }}
           {{ sprint.name }}
         </h4>
-        <!-- NOTE tasks from Appstate computed -->
-        <!-- {{tasks.weight}} -->
-        <!-- {{task.weight}} -->
         <h5>{{ totalWeight }}</h5>
         <i class="mdi mdi-weight mdi-48px mb-4 gradient-text2"></i>
       </div>
@@ -27,7 +24,7 @@
           title="Add Task"
           @click="setActiveSprint(sprint)"
         >
-          Add Task <i class="ms-2 mdi mdi-plus-thick mdi-16px"></i>
+          <i class="mdi mdi-plus-thick mdi-16px"> Task</i>
         </button>
       </div>
       <div class="col-4 text-end px-5">

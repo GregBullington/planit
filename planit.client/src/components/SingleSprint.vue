@@ -2,7 +2,7 @@
   <div class="col card-sprints rounded p-2 m-2">
     <div class="row align-items-center">
       <div class="col-6 d-flex align-items-center">
-        <i class="mdi mdi-rhombus-outline mdi-48px me-3 gradient-text2"></i>
+        <i class="mdi mdi-rhombus-outline mdi-48px me-3 text-info"></i>
         <h4
           class="me-5 selectable"
           title="Expand Project Tasks"
@@ -13,7 +13,7 @@
           {{ sprint.name }}
         </h4>
         <h5>{{ totalWeight }}</h5>
-        <i class="mdi mdi-weight mdi-48px mb-4 gradient-text2"></i>
+        <i class="mdi mdi-weight mdi-48px mb-4 text-info"></i>
       </div>
       <div class="col-md-2 text-end">
         <button

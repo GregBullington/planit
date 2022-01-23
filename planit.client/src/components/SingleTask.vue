@@ -26,7 +26,7 @@
               title="Open Task Notes"
               class="
                 mdi mdi-comment-text-multiple-outline mdi-24px
-                gradient-text
+                text-info
                 selectable
               "
               data-bs-toggle="offcanvas"
@@ -40,7 +40,7 @@
             {{ task.weight }}
           </p>
           <span>
-            <i class="mdi mdi-weight mdi-24px gradient-text2"></i>
+            <i class="mdi mdi-weight mdi-24px text-info"></i>
           </span>
         </div>
       </div>

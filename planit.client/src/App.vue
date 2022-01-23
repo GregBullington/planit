@@ -6,9 +6,7 @@
     <router-view />
   </main>
   <footer class="bg-grey">
-    <div class="gradient-text site-font text-center p-4">
-      Made By Greg and Scott
-    </div>
+
   </footer>
 </template>
 

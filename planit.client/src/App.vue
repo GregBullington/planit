@@ -2,12 +2,12 @@
   <header>
     <Navbar />
   </header>
-  <main>
+  <main class="site-font container-fluid">
     <router-view />
   </main>
-  <footer>
-    <div class="bg-dark text-light text-center p-4">
-      Made with 💖 by CodeWorks
+  <footer class="bg-grey">
+    <div class="gradient-text site-font text-center p-4">
+      Made By Greg and Scott
     </div>
   </footer>
 </template>
@@ -26,5 +26,4 @@ export default {
 </script>
 <style lang="scss">
 @import "./assets/scss/main.scss";
-
 </style>

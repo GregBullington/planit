@@ -1,16 +1,16 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-    <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
-      <div class="d-flex flex-column align-items-center">
-        <img
-          alt="logo"
-          src="../assets/img/cw-logo.png"
-          height="45"
-        />
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light px-3 elevation-3">
+    <router-link class="navbar-brand" :to="{ name: 'Home' }">
+      <div
+        title="Go to Home"
+        class="d-flex flex-row align-items-center text-dark site-font"
+      >
+        <img src="../assets/img/PlanitLogo.PNG" alt="" />
+        <h1 class="gradient-text mt-3">PlanIt</h1>
       </div>
     </router-link>
     <button
-      class="navbar-toggler"
+      class="navbar-toggler black"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarText"
@@ -21,16 +21,17 @@
       <span class="navbar-toggler-icon" />
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto">
-        <li>
-          <router-link :to="{ name: 'About' }" class="btn text-success lighten-30 selectable text-uppercase">
-            About
-          </router-link>
-        </li>
-      </ul>
-      <span class="navbar-text">
+      <span class="navbar-text ms-auto">
         <button
-          class="btn selectable text-success lighten-30 text-uppercase my-2 my-lg-0"
+          class="
+            btn
+            selectable
+            text-dark
+            lighten-30
+            text-uppercase
+            my-2 my-lg-0
+            site-font
+          "
           @click="login"
           v-if="!user.isAuthenticated"
         >
@@ -44,13 +45,21 @@
             aria-expanded="false"
             id="authDropdown"
           >
+            <span
+              style="font-size: 23px"
+              class="mx-3 text-dark lighten-30 site-font gradient-text"
+              title="Manage Account / Logout"
+              >{{ account.name }}</span
+            >
             <img
+              title="Edit Profile"
               :src="user.picture"
               alt="user photo"
               height="40"
-              class="rounded"
+              class="ms-3 img-container selectable"
+              data-bs-toggle="modal"
+              data-bs-target="#ProfileForm"
             />
-            <span class="mx-3 text-success lighten-30">{{ user.name }}</span>
           </div>
           <div
             class="dropdown-menu p-0 list-group w-100"
@@ -62,7 +71,11 @@
               </div>
             </router-link>
             <div
-              class="list-group-item list-group-item-action hoverable text-danger"
+              class="
+                list-group-item list-group-item-action
+                hoverable
+                text-danger
+              "
               @click="logout"
             >
               <i class="mdi mdi-logout"></i>
@@ -73,6 +86,11 @@
       </span>
     </div>
   </nav>
+  <Modal id="ProfileForm">
+    <template #modal-title> Edit your profile here! </template>
+
+    <template #modal-body><Profile /> <ProfileForm /> </template>
+  </Modal>
 </template>
 
 <script>
@@ -82,6 +100,7 @@ import { computed } from 'vue'
 export default {
   setup() {
     return {
+      account: computed(() => AppState.account),
       user: computed(() => AppState.user),
       async login() {
         AuthService.loginWithPopup()
@@ -110,12 +129,15 @@ export default {
 a:hover {
   text-decoration: none;
 }
-.nav-link{
+.nav-link {
   text-transform: uppercase;
 }
-.navbar-nav .router-link-exact-active{
+.navbar-nav .router-link-exact-active {
   border-bottom: 2px solid var(--bs-success);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+.black {
+  background-color: #9a19dd;
 }
 </style>

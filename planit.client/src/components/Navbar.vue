@@ -5,7 +5,7 @@
         title="Go to Home"
         class="d-flex flex-row align-items-center text-dark site-font"
       >
-        <img src="../assets/img/PlanitLogo.PNG" alt="" />
+        <img src="../assets/img/planit-logo.png" alt="" />
         <h1 class="gradient-text mt-3">PlanIt</h1>
       </div>
     </router-link>
